@@ -24,7 +24,8 @@ namespace AdGraph
         0 — 2
         |
         3 — 1
-        
+*/
+
     class Program
     {
         public static List<List<int>> AdGraph(List<List<int>> graph)
