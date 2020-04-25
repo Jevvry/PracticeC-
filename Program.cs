@@ -52,7 +52,7 @@ namespace Stairs
             //Так как мы добавили несуществующие лестницы, то должны вычесть из результата 
             var result = BigInteger.MinusOne;
             //Результатом будут все лестницы из cubeCount кубиков по всем возможным высотам
-            for (int i = 0; i <= cubeCount; ++i)
+            for (int i = 2; i <= cubeCount; ++i)
                 result += opt[cubeCount, i];
             return result;
         }
