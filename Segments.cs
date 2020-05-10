@@ -51,6 +51,7 @@ namespace Segments
                 if (curPoint.IsStart)
                 {
                     //вот тут и нужен поиск соседей точки, который я не смог реализовать 
+                    // но сложность этой операции в бинарном дереве поиска была бы logn 
                     // res = CheckNeighbors();
                     tree.Add(curPoint.y);
                 }
