@@ -41,8 +41,10 @@ namespace BinaryTree
                     return true;
                 }
 
-                if (curNode.Left != null || curNode.Right != null)
-                    queue.Enqueue(curNode.Left ?? curNode.Right);
+                if (curNode.Left != null)
+                    queue.Enqueue(curNode.Left);
+                if (curNode.Right != null)
+                    queue.Enqueue(curNode.Right);
             }
             return false;
         }
